@@ -1,0 +1,476 @@
+body {
+	background:#fff url(/images/bg.gif) top left repeat-x;
+	font-family:verdana,sans-serif;
+	margin:0;
+	padding:0;
+	font-size:80%;
+}
+form {
+	margin:0;
+}
+h1, h2, h3, h4 {
+	font-family:arial;
+	font-weight:normal;
+	/* Fix for IE bug, which results in main h1 being hidden by background! */
+	position:relative;
+}
+h1, h2 {
+	font-size:1.7em;
+}
+h1 a:visited {
+	color:#88762b;
+}
+a, a:link {
+	color:#00f;
+	text-decoration:none;
+}
+a:hover, a:active {
+	color:red;
+	text-decoration:underline;
+}
+ul {
+	text-align:left;
+	list-style-type:disc;
+	padding:0 0 0 1em;
+}
+
+#main-box h1 {
+	margin:0;
+}
+
+#logo {
+	margin:12px 0 0 21px;
+}
+#main {
+	width:62em;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-31em;
+	padding:0;
+}
+.centered {
+	text-align:center;
+	margin:1em;
+}
+.questions {
+	margin:1em;
+}
+.questions h3 {
+	margin:0 0 .2em 0;
+	font-size:1.1em;
+	font-weight:bold;
+}
+.question {
+	padding:1em 1em 1em 1.25em;
+	margin-bottom:1em;
+	border:1px solid #FFC33E;
+	/* Pos & Width for IE bug */
+	position:relative;
+	width:95%;
+	background-color:#FFFFB1;
+}
+.ads {
+	margin-top:6px;
+	text-align:center;
+}
+#tabs {
+	font-size:.95em;
+	margin:21px 0 0 21px;
+	padding:0;
+	height:1.7em;
+}
+#tabs li {
+	float:left;
+	list-style:none;
+	background:#ffefa6 url(/images/tab-right.gif) top right no-repeat;
+	padding:0;
+	margin:0 5px 0 0;
+}
+#tabs li.on {
+	background-color:#ffe57b;
+}
+#tabs li a {
+	background:url(/images/tab-left.gif) top left no-repeat;
+	display:block;
+	float:left;
+	width:7em;
+	line-height:1.7em;
+	color:#7f7f4a;
+	text-decoration:none;
+	text-align:center;
+}
+#tabs a:hover, #tabs a:active {
+	text-decoration:underline;
+	color:#6f6f3a;
+}
+
+#main-box {
+	clear:left;
+	margin:0;
+	padding:1em;
+	background:#ffc33e url(/images/main-box-bg.gif) top left repeat-x;
+	border-top:1px solid #fff;
+}
+.faded {
+	font-size:1.15em;
+	color:#665c31;
+	margin:.8em 0 0 1em;
+	font-family:arial;
+	letter-spacing:.03em;
+}
+.large {
+	font-size:1.6em;
+}
+
+#footer {
+	text-align:center;
+	font-size:.8em;
+	color:#888;
+	padding-top:1em;
+}
+#footer div {
+	margin:1em 0;
+}
+#footer a {
+	padding:0 1.4em;
+	font-size:110%;
+}
+
+input#search-term {
+	margin-bottom:-.3em;
+	//margin-bottom:-.8em;
+}
+
+#home-location-link {
+	float:right;
+	font-size:.8em;
+	padding:3px 23px 6px 0;
+	margin-top:7px;
+	background:url(/images/home-location-icon.gif) 100% 50% no-repeat;
+}
+.lbOn:link {
+    text-decoration:none;
+}
+#fcs a {
+	color:#000;
+}
+
+#fcs h2 {
+	font-size:1.15em;
+	margin:0;
+	height:1.4em;
+	padding-top:.5em;
+}
+#fcs .on h2 {
+	font-weight:bold;
+}
+.day-forecast {
+	width:11em;
+	float:left;
+	margin:2px;
+	text-decoration:none;
+}
+.day-forecast.on {
+	padding:0 2px;
+}
+.day-forecast .fc-top {
+	background:#f6f6f6 url(/images/box-tl.gif) top left no-repeat;
+}
+.day-forecast h2 {
+	background:url(/images/box-tr.gif) top right no-repeat;
+}
+.day-forecast.on .fc-top {
+	background:#f6f6f6 url(/images/box-on-tl.gif) top left no-repeat;
+}
+.day-forecast.on h2 {
+	background:url(/images/box-on-tr.gif) top right no-repeat;
+}
+.fc-middle {
+	float:left;
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+	background-color:#fff;
+	width:100%;
+}
+#fcs .temp {
+	/* Next line controls relative position of high/low temperatures within picture block. 8em is centered vertically. */
+	font-size:1em;
+	font-weight:bold;
+	height:7.5em;
+}
+#fcs .hi {
+	background:url(/images/box-middle-r.gif) bottom right repeat-y;
+	padding:0 6px 0 0;
+}
+#fcs .lo {
+	background:url(/images/box-middle-l.gif) bottom left repeat-y;
+	padding:0 0 0 9px;
+}
+#fcs .on .hi {
+	background:url(/images/box-middle-on-r.gif) top right repeat-y;
+}
+#fcs .on .lo {
+	background:url(/images/box-middle-on-l.gif) top left repeat-y;
+}
+
+.hi {
+	vertical-align:bottom;
+	line-height:1.9em;
+	float:right;
+	color:#f00;
+}
+.lo {
+	vertical-align:bottom;
+	line-height:1.9em;
+	float:left;
+	color:#33f;
+}
+.fc-bottom {
+	clear:both;
+	font-size:.9em;
+}
+#fcs .fc-bottom {
+	background:url(/images/box-bl.gif) bottom left no-repeat;
+}
+#fcs .fc-bottom div {
+	background:url(/images/box-br.gif) bottom right no-repeat;
+}
+#fcs .on .fc-bottom {
+	background:url(/images/box-on-bl.gif) bottom left no-repeat;
+}
+#fcs .on .fc-bottom div {
+	background:url(/images/box-on-br.gif) bottom right no-repeat;
+}
+.fc-bottom div {
+	height:3em;
+	margin-left:8px;
+	margin-right:0px;
+}
+.one-word .fc-bottom div {
+	/* This centers the weather description text for short descriptions (i.e. not "rain/freezing rain likely") */
+	line-height:2.2em;
+}
+
+.fc-middle.hot {
+	background-image:url(/images/hot.gif) ;
+}
+.fc-middle.sunny {
+	background-image:url(/images/sunny.jpg) ;
+}
+.fc-middle.rain {
+	background-image:url(/images/rain.jpg) ;
+}
+.fc-middle.showers {
+	background-image:url(/images/showers.jpg) ;
+}
+.fc-middle.cloudy {
+	background-image:url(/images/cloudy.jpg) ;
+}
+.fc-middle.cold {
+	background-image:url(/images/cold.jpg) ;
+}
+.fc-middle.flurries {
+	background-image:url(/images/flurries.jpg) ;
+}
+.fc-middle.foggy {
+	background-image:url(/images/foggy.jpg) ;
+}
+.fc-middle.hazy {
+	background-image:url(/images/hazy.jpg) ;
+}
+.fc-middle.mostly-cloudy {
+	background-image:url(/images/mostly-cloudy.jpg) ;
+}
+.fc-middle.mostly-sunny {
+	background-image:url(/images/mostly-sunny.jpg) ;
+}
+.fc-middle.snow {
+	background-image:url(/images/snow.jpg) ;
+}
+.fc-middle.storms {
+	background-image:url(/images/storms.jpg) ;
+}
+.fc-middle.sunny-cloudy {
+	background-image:url(/images/sunny-cloudy.jpg) ;
+}
+.fc-middle.showers {
+	background-image:url(/images/showers.jpg) ;
+}
+.fc-middle.windy {
+	background-image:url(/images/windy.jpg) ;
+}
+.fc-middle.wintry-mix {
+	background-image:url(/images/wintry-mix.jpg) ;
+}
+.fc-middle.mostly-cloudy-rain {
+	background-image:url(/images/mostly-cloudy-rain.jpg) ;
+}
+.fc-middle.mostly-cloudy-showers {
+	background-image:url(/images/mostly-cloudy-showers.jpg) ;
+}
+.fc-middle.rain-storms {
+	background-image:url(/images/rain-storms.jpg) ;
+}
+.fc-middle.nothing {
+	background-image:url(/images/nothing.jpg) ;
+}
+
+.clear-all {
+	clear:both;
+	height:1px;
+	font-size:.001%;
+}
+
+.lists {
+	padding:1em 0;
+	border:1px solid #ffc;
+	/* Pos & Width for IE bug */
+	position:relative;
+	width:100%;
+}
+.lists, .lists ul {
+	background-color:#ffe87f;
+}
+.lists ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.lists li {
+	padding-left:3em;
+}
+.lists li a {
+	display:block;
+	width:100%;
+	padding:.2em .2em .2em .5em;
+	border:1px solid #ffe87f;
+}
+.lists li a:visited {
+	color:#606;
+}
+.lists li a:hover, .lists li a:active {
+	background:#ffefa9;
+	color:#f00;
+	border-color:#ff9 #dd76 #dd7 #ff9;
+}
+.lists .multiple {
+	font-weight:bold;
+}
+
+.oneofthree {
+	width:30%;
+	float:left;
+}
+.oneoffour {
+	width:23%;
+	float:left;
+	font-size:.85em;
+}
+
+.oneofseven {
+	width:12%;
+	float:left;
+}
+
+table.accuracy-data {
+	width:23.75em;
+	float:left;
+	text-align:left;
+	border:1px solid #ccc;
+}
+table.accuracy-data.right {
+	float:right;
+}
+table.accuracy-data.detail {
+	#margin: 2em 1em 0 0;
+	width:100%;
+}
+table.accuracy-data.detail caption {
+	margin: 2em 1em 0 0;
+}
+.accuracy td {
+	border-top:1px solid #fff;
+}
+.accuracy-data td {
+	padding:4px;
+}
+.accuracy-data thead {
+	font-weight:bold;
+}
+.accuracy-data th {
+	padding:4px;
+}
+.accuracy.high {
+	background:#ffed9d;
+	color:red;
+	font-weight:bold;
+}
+.accuracy.medium {
+	background:#fff3ba;
+}
+.accuracy.low {
+	background:#fffad6;
+}
+table caption {
+	font-weight:bold;
+	text-align:left;
+	font-size:1.1em;
+	padding:.1em;
+}
+.centered.narrow {
+	padding:0 5em;
+}
+.narrow h2 {
+	margin:1em 0 .5em 0;
+}
+
+.fact {
+	background:#fffad6;
+	border:1px solid #ccc;
+	margin:1em 0;
+	padding:.9em .5em;
+}
+.fact h3 {
+	margin:0 0 .2em 0;
+	font-size:1.1em;
+	font-weight:bold;
+}
+.fact p {
+	margin:0;
+}
+
+.further-analysis {
+	display:block;
+	text-align:right;
+}
+
+.trend {
+	display:block;
+	text-align:center;
+	font-size:.95em;
+	color:#7f7f4a;
+	text-decoration:none;
+}
+
+# Blog
+.blogposts {
+	margin:1em;
+}
+.blogpost {
+	padding:1em 1em 1em 1.25em;
+	margin-bottom:1em;
+	border:1px solid #FFC33E;
+	/* Pos & Width for IE bug */
+	position:relative;
+	width:95%;
+	background-color:#FFFFB1;
+}
+.blogpost h3 {
+	font-style:italic;
+	margin: 0 0 0 0;
+}
+.blogpost h2 {
+	margin:0 0 .2em 0;
+	font-size:1.4em;
+}

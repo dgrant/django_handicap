@@ -1,0 +1,46 @@
+{% extends "scores/base.html" %}
+
+{% block title %}List Scores{% endblock %}
+
+{% block handicap %}
+<h1>Your index: {{ index }}</h1>
+{% endblock %}
+
+{% block content %}
+<h2>Your scores:</h2>
+{% if score_list %}
+  <table border="0" width="100%">
+    <tr><td></td><td></td><td>Date</td><td>Score</td><td>Tee</td></tr>
+    {% for score, used in score_list %}
+      <tr {% if used %}style="background-color: #eaa;"{% endif %}>
+        <td>{{whichOnes.forloop.counter}}<a href="{% url score_update score.id %}">edit</a></td>
+	<td><a href="{{ score.get_absolute_url }}">detail</a></td>
+	<td>{{ score.date }}</td>
+	<td>{{ score.score }}</td>
+	<td>{{ score.tee }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+
+<br />
+<div class="pagination">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+</div>
+
+
+{% else %}
+    <p>No scores are available.</p>
+{% endif %}
+{% endblock %}

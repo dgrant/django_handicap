@@ -1,0 +1,18 @@
+{% extends "scores/base.html" %}
+
+{% block title %}Course Detail{% endblock %}
+
+{% block content %}
+
+<h1>Course Id#{{ object.id }}</h1>
+<ul>
+<li>Name: {{ object.name }}</li>
+</ul>
+<p>
+<a href="/score/course/{{object.id}}/edit">edit me</a>
+</p>
+<p>
+<a href="/score/course/">see all courses</a>
+</p>
+
+{% endblock %}

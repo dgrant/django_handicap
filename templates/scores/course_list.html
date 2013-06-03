@@ -1,0 +1,17 @@
+{% extends "scores/base.html" %}
+
+{% block title %}List Courses{% endblock %}
+
+{% block content %}
+<h2>List of all your courses</h2>
+{% if object_list %}
+    <table border="0" width="100%">
+    <tr><td></td><td></td><td>Name</td></tr>
+    {% for object in object_list %}
+        <tr><td><a href="/score/course{{ object.id }}/edit">edit</a></td><td><a href="/score/course{{ object.id }}/   ">detail</a></td><td>{{ object.name }}</td></tr>
+    {% endfor %}
+    </table>
+{% else %}
+    <p>No courses are available.</p>
+{% endif %}
+{% endblock %}

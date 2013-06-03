@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <link rel="stylesheet" href="/site_media/css/style.css" />
+    <title>{% block title %}My amazing site{% endblock %}</title>
+</head>
+
+<body>
+<div id="main">
+    <h1>My Handicap!</h1>
+    <!--<a href="/"><img src='/site_media/images/forecast-advisor-logo.gif' alt='ForecastAdvisor.com' width='279' height='40' border='0' id='logo' /></a>-->
+    <ul id="tabs">
+        <li class="on"><a href="{% url score_list %}">scores</a></li>
+	<li ><a href="{% url score_add %}">new score</a></li>
+	<li ><a href="/score/course/add">new course</a></li>
+	<li ><a href="/score/tee/add">new tee</a></li>
+	<li ><a href="/score/settings">preferences</a></li>
+	<li ><a href="/accounts/logout">logout</a></li>	
+    </ul>
+
+<div id="main-box">
+    <div>
+        {% block handicap %}{% endblock %}
+    </div>
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</div>
+
+<div id="footer">
+	<div>&copy;2006 David Grant. All rights reserved. For personal use only.</div>
+</div>
+
+</div>
+</body>
+</html>

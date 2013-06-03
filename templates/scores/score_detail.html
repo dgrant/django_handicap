@@ -1,0 +1,20 @@
+{% extends "scores/base.html" %}
+
+{% block title %}Edit score{% endblock %}
+
+{% block content %}
+
+<h1>Score Id#{{ object.id }}</h1>
+<ul>
+<li>Date: {{ object.date }}</li>
+<li>Tee: {{ object.tee }}</li>
+<li>Score: {{ object.score }}</li>
+</ul>
+<p>
+<a href="{% url score_update object.id %}">edit me</a>
+</p>
+<p>
+<a href="{% url score_list %}">return to scores</a>
+</p>
+
+{% endblock %}

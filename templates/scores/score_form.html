@@ -1,0 +1,23 @@
+{% extends "scores/base.html" %}
+
+{% block title %}Edit/Create score{% endblock %}
+
+{% block content %}
+
+<h1>Edit/Create a Score:</h1>
+
+{% if form.has_errors %}
+<h2>Please correct the following error{{ form.error_dict|pluralize }}:</h2>
+{% endif %}
+
+<form method="POST" action=".">
+    {% for field in form %}
+       <p>
+            {{ field.errors }}
+            {{ field.label_tag }}: {{ field }}
+       </p>
+    {% endfor %}
+<input type="submit" value="Submit" />
+</form>
+
+{% endblock %}
