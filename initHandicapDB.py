@@ -10,7 +10,7 @@ for u in User.objects.all():
     if u.username != 'admin' and u.is_superuser != True and u.is_staff != True:
         u.delete()
 
-u1 = User.objects.create_user('david', 'davidgrant@gmail.com', 'nasha')
+u1 = User.objects.create_user('david', 'davidgrant@gmail.com', 'blather')
 u1.first_name = 'David'
 u1.last_name = 'Grant'
 u1.save()
