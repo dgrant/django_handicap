@@ -1,4 +1,4 @@
-from handicap.scores.models import *
+from scores.models import *
 from random import randint
 from string import ascii_lowercase
 from datetime import date

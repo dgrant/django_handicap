@@ -1,5 +1,5 @@
 body {
-	background:#fff url(/site_media/images/bg.gif) top left repeat-x;
+	background:#fff url(/static/images/bg.gif) top left repeat-x;
 	font-family:verdana,sans-serif;
 	margin:0;
 	padding:0;
@@ -83,7 +83,7 @@ ul {
 #tabs li {
 	float:left;
 	list-style:none;
-	background:#ffefa6 url(/site_media/images/tab-right.gif) top right no-repeat;
+	background:#ffefa6 url(/static/images/tab-right.gif) top right no-repeat;
 	padding:0;
 	margin:0 5px 0 0;
 }
@@ -91,7 +91,7 @@ ul {
 	background-color:#ffe57b;
 }
 #tabs li a {
-	background:url(/site_media/images/tab-left.gif) top left no-repeat;
+	background:url(/static/images/tab-left.gif) top left no-repeat;
 	display:block;
 	float:left;
 	width:7em;
@@ -109,7 +109,7 @@ ul {
 	clear:left;
 	margin:0;
 	padding:1em;
-	background:#ffc33e url(/site_media/images/main-box-bg.gif) top left repeat-x;
+	background:#ffc33e url(/static/images/main-box-bg.gif) top left repeat-x;
 	border-top:1px solid #fff;
 }
 .faded {
@@ -147,7 +147,7 @@ input#search-term {
 	font-size:.8em;
 	padding:3px 23px 6px 0;
 	margin-top:7px;
-	background:url(/site_media/images/home-location-icon.gif) 100% 50% no-repeat;
+	background:url(/static/images/home-location-icon.gif) 100% 50% no-repeat;
 }
 .lbOn:link {
     text-decoration:none;
@@ -175,16 +175,16 @@ input#search-term {
 	padding:0 2px;
 }
 .day-forecast .fc-top {
-	background:#f6f6f6 url(/site_media/images/box-tl.gif) top left no-repeat;
+	background:#f6f6f6 url(/static/images/box-tl.gif) top left no-repeat;
 }
 .day-forecast h2 {
-	background:url(/site_media/images/box-tr.gif) top right no-repeat;
+	background:url(/static/images/box-tr.gif) top right no-repeat;
 }
 .day-forecast.on .fc-top {
-	background:#f6f6f6 url(/site_media/images/box-on-tl.gif) top left no-repeat;
+	background:#f6f6f6 url(/static/images/box-on-tl.gif) top left no-repeat;
 }
 .day-forecast.on h2 {
-	background:url(/site_media/images/box-on-tr.gif) top right no-repeat;
+	background:url(/static/images/box-on-tr.gif) top right no-repeat;
 }
 .fc-middle {
 	float:left;
@@ -200,18 +200,18 @@ input#search-term {
 	height:7.5em;
 }
 #fcs .hi {
-	background:url(/site_media/images/box-middle-r.gif) bottom right repeat-y;
+	background:url(/static/images/box-middle-r.gif) bottom right repeat-y;
 	padding:0 6px 0 0;
 }
 #fcs .lo {
-	background:url(/site_media/images/box-middle-l.gif) bottom left repeat-y;
+	background:url(/static/images/box-middle-l.gif) bottom left repeat-y;
 	padding:0 0 0 9px;
 }
 #fcs .on .hi {
-	background:url(/site_media/images/box-middle-on-r.gif) top right repeat-y;
+	background:url(/static/images/box-middle-on-r.gif) top right repeat-y;
 }
 #fcs .on .lo {
-	background:url(/site_media/images/box-middle-on-l.gif) top left repeat-y;
+	background:url(/static/images/box-middle-on-l.gif) top left repeat-y;
 }
 
 .hi {
@@ -231,16 +231,16 @@ input#search-term {
 	font-size:.9em;
 }
 #fcs .fc-bottom {
-	background:url(/site_media/images/box-bl.gif) bottom left no-repeat;
+	background:url(/static/images/box-bl.gif) bottom left no-repeat;
 }
 #fcs .fc-bottom div {
-	background:url(/site_media/images/box-br.gif) bottom right no-repeat;
+	background:url(/static/images/box-br.gif) bottom right no-repeat;
 }
 #fcs .on .fc-bottom {
-	background:url(/site_media/images/box-on-bl.gif) bottom left no-repeat;
+	background:url(/static/images/box-on-bl.gif) bottom left no-repeat;
 }
 #fcs .on .fc-bottom div {
-	background:url(/site_media/images/box-on-br.gif) bottom right no-repeat;
+	background:url(/static/images/box-on-br.gif) bottom right no-repeat;
 }
 .fc-bottom div {
 	height:3em;
@@ -253,67 +253,67 @@ input#search-term {
 }
 
 .fc-middle.hot {
-	background-image:url(/site_media/images/hot.gif) ;
+	background-image:url(/static/images/hot.gif) ;
 }
 .fc-middle.sunny {
-	background-image:url(/site_media/images/sunny.jpg) ;
+	background-image:url(/static/images/sunny.jpg) ;
 }
 .fc-middle.rain {
-	background-image:url(/site_media/images/rain.jpg) ;
+	background-image:url(/static/images/rain.jpg) ;
 }
 .fc-middle.showers {
-	background-image:url(/site_media/images/showers.jpg) ;
+	background-image:url(/static/images/showers.jpg) ;
 }
 .fc-middle.cloudy {
-	background-image:url(/site_media/images/cloudy.jpg) ;
+	background-image:url(/static/images/cloudy.jpg) ;
 }
 .fc-middle.cold {
-	background-image:url(/site_media/images/cold.jpg) ;
+	background-image:url(/static/images/cold.jpg) ;
 }
 .fc-middle.flurries {
-	background-image:url(/site_media/images/flurries.jpg) ;
+	background-image:url(/static/images/flurries.jpg) ;
 }
 .fc-middle.foggy {
-	background-image:url(/site_media/images/foggy.jpg) ;
+	background-image:url(/static/images/foggy.jpg) ;
 }
 .fc-middle.hazy {
-	background-image:url(/site_media/images/hazy.jpg) ;
+	background-image:url(/static/images/hazy.jpg) ;
 }
 .fc-middle.mostly-cloudy {
-	background-image:url(/site_media/images/mostly-cloudy.jpg) ;
+	background-image:url(/static/images/mostly-cloudy.jpg) ;
 }
 .fc-middle.mostly-sunny {
-	background-image:url(/site_media/images/mostly-sunny.jpg) ;
+	background-image:url(/static/images/mostly-sunny.jpg) ;
 }
 .fc-middle.snow {
-	background-image:url(/site_media/images/snow.jpg) ;
+	background-image:url(/static/images/snow.jpg) ;
 }
 .fc-middle.storms {
-	background-image:url(/site_media/images/storms.jpg) ;
+	background-image:url(/static/images/storms.jpg) ;
 }
 .fc-middle.sunny-cloudy {
-	background-image:url(/site_media/images/sunny-cloudy.jpg) ;
+	background-image:url(/static/images/sunny-cloudy.jpg) ;
 }
 .fc-middle.showers {
-	background-image:url(/site_media/images/showers.jpg) ;
+	background-image:url(/static/images/showers.jpg) ;
 }
 .fc-middle.windy {
-	background-image:url(/site_media/images/windy.jpg) ;
+	background-image:url(/static/images/windy.jpg) ;
 }
 .fc-middle.wintry-mix {
-	background-image:url(/site_media/images/wintry-mix.jpg) ;
+	background-image:url(/static/images/wintry-mix.jpg) ;
 }
 .fc-middle.mostly-cloudy-rain {
-	background-image:url(/site_media/images/mostly-cloudy-rain.jpg) ;
+	background-image:url(/static/images/mostly-cloudy-rain.jpg) ;
 }
 .fc-middle.mostly-cloudy-showers {
-	background-image:url(/site_media/images/mostly-cloudy-showers.jpg) ;
+	background-image:url(/static/images/mostly-cloudy-showers.jpg) ;
 }
 .fc-middle.rain-storms {
-	background-image:url(/site_media/images/rain-storms.jpg) ;
+	background-image:url(/static/images/rain-storms.jpg) ;
 }
 .fc-middle.nothing {
-	background-image:url(/site_media/images/nothing.jpg) ;
+	background-image:url(/static/images/nothing.jpg) ;
 }
 
 .clear-all {

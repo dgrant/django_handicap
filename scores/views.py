@@ -1,5 +1,5 @@
-from handicap.scores.models import Score, Course, Golfer
-from handicap.scores.forms import ScoreForm
+from models import Score, Course, Golfer
+from forms import ScoreForm
 from django.shortcuts import render_to_response, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
 from django import forms
@@ -55,10 +55,12 @@ def _calculateHandicap(all_scores):
     Calculate handicap from a list of scores and return the handicap and the an array that contains 0 or 1 at
     position i if score i was used in calculating the handicap
     """
-    scores_subset=all_scores[:20]
+
+    # Get the first 20 scores
+    scores_subset = all_scores[:20]
     differentials = []
     for i, aScore in enumerate(scores_subset):
-        differentials.append(((float(aScore.score) - float(aScore.tee.rating))*float(aScore.tee.slope)/113.0, i))
+        differentials.append(((float(aScore.score) - float(aScore.tee.rating)) * float(aScore.tee.slope) / 113.0, i))
 
     #differentials will be at most 20 scores currently
     differentials.sort()
@@ -85,7 +87,7 @@ def _calculateHandicap(all_scores):
         numUse = 9
     else:
         numUse = 10
-    whichOnesUsed = [False for x in xrange(howMany)]
+    whichOnesUsed = [False for x in range(howMany)]
     for i in xrange(numUse):
         whichOnesUsed[differentials[i][1]] = True
     #undecorate. THIS IS UGLY, fix this

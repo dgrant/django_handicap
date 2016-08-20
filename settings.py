@@ -62,7 +62,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.doc.XViewMiddleware',
 )
 
-ROOT_URLCONF = 'handicap.urls'
+ROOT_URLCONF = 'urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -76,6 +76,11 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
-    'handicap.scores',
+    'django.contrib.staticfiles',
+    'scores',
     'django.contrib.admin'
 )
+
+STATIC_URL = '/static/'
+
+ATOMIC_REQUESTS = True
