@@ -11,4 +11,4 @@ mock==2.0.0
 django-model-utils==3.1.2
 pip-tools==3.0.0
 
-fabric==1.8.3
+fabric==2.3.1
