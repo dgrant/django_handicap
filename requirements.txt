@@ -5,7 +5,7 @@ mysql-python==1.2.5
 ipython==7.0.1
 
 coverage==4.5.1
-model_mommy==1.2.1
+model_mommy==1.6.0
 django-debug-toolbar==1.2.1
 mock==1.0.1
 django-model-utils==2.0.3
