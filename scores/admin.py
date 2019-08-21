@@ -1,4 +1,4 @@
-from models import Course, Golfer, Score, Tee
+from .models import Course, Golfer, Score, Tee
 from django.contrib import admin
 
 class TeeInline(admin.TabularInline):

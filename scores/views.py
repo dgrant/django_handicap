@@ -1,5 +1,5 @@
-from models import Score, Course, Golfer
-from forms import ScoreForm
+from .models import Score, Course, Golfer
+from .forms import ScoreForm
 from django.shortcuts import render_to_response, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
 from django import forms
@@ -33,7 +33,7 @@ def score_list(request):
     index, whichOnes = _calculateHandicap(scores)
     whichOnes = whichOnes[(page_number-1)*PAGINATE_BY:(page_number)*PAGINATE_BY]
     c = RequestContext(request, {
-        'score_list': zip(page_obj.object_list, whichOnes),
+        'score_list': list(zip(page_obj.object_list, whichOnes)),
         'whichOnes': whichOnes,
         'page_obj': page_obj,
         'index': index,
@@ -88,10 +88,10 @@ def _calculateHandicap(all_scores):
     else:
         numUse = 10
     whichOnesUsed = [False for x in range(howMany)]
-    for i in xrange(numUse):
+    for i in range(numUse):
         whichOnesUsed[differentials[i][1]] = True
     #undecorate. THIS IS UGLY, fix this
-    for i in xrange(len(differentials)):
+    for i in range(len(differentials)):
         differentials[i] = differentials[i][0]
     if numUse == 0:
         currHandicap = 0

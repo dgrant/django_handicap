@@ -1,5 +1,5 @@
 from django.conf.urls.defaults import *
-import scores.urls
+from . import scores.urls
 
 from django.contrib import admin
 admin.autodiscover()
