@@ -12,3 +12,4 @@ django-model-utils==2.0.3
 pip-tools==0.3.4
 
 fabric==1.8.3
+paramiko>=3.4.0 # not directly required, pinned by Snyk to avoid a vulnerability
